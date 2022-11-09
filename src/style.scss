@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body,
+	html {
+		@apply w-full h-full;
+	}
+}
+
+@layer components {
+	.header-navigation {
+		@apply lg:gap-6 xl:gap-10 fixed left-0 top-16 hidden flex-col bg-black w-full inset-0 z-40 lg:relative lg:flex lg:bg-transparent lg:flex-row lg:top-0;
+		a {
+			@apply text-white/90 border-b border-white/20 py-1 lg:py-0 lg:border-0 lg:text-white;
+		}
+	}
+}
+
+@layer utilities {
+	.header-shadow {
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4158438375350141) 95%,
+			rgba(255, 255, 255, 0) 100%
+		);
+	}
+}

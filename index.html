@@ -8,7 +8,7 @@
   <title>Vite App</title>
 
   <!--Style-->
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/style.scss">
 
 </head>
 
@@ -19,52 +19,90 @@
   <header class="w-full h-full bg-cover bg-no-repeat bg-center" style="background-image:url('./src/images/slider.png')">
 
     <!--Shadow-->
-    <div class="absolute inset:0 w-full h-full bg-black/40 -z-1"></div>
+    <div class="absolute inset:0 w-full h-full header-shadow"></div>
     <!--Shadow-->
 
     <!--Top Bar-->
-    <div class="container mx-auto p-4 border-b border-white/30">
-      <div class="flex justify-between items-center relative">
-        <a href="index.html">
-          <img src="src/images/logo.png" alt="logo" class="mt-2" />
-        </a>
-        <nav>
-          <img src="src/images/hamburger.png" class="cursor- w-8">
-          <div class="absolute left-0 top-12 p-4 hidden flex-col bg-black/50 w-full">
-            <a href="#" class="text-white/90 border-b border-white/20 py-1">Kurumsal</a>
-            <a href="#" class="text-white/90 border-b border-white/20 py-1">Projelerimiz</a>
-            <a href="#" class="text-white/90 border-b border-white/20 py-1">Basın</a>
-            <a href="#" class="text-white/90 border-b border-white/20 py-1">Önce İnsan</a>
-            <a href="#" class="text-white/90 border-b border-white/20 py-1">Bize Ulaşın</a>
-          </div>
-        </nav>
+    <div class="border-b border-white/30">
+      <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center relative">
+
+          <!--Logo-->
+          <a href="index.html">
+            <img src="src/images/logo.png" alt="logo" class="mt-2" />
+          </a>
+          <!--### Logo ###-->
+
+          <!-- Sol Taraf / Navbar -->
+          <nav class="flex justify-center items-center gap-8 lg:gap-6 xl:gap-10 2xl:14">
+
+            <!-- Hamburger Icon -->
+            <img src="src/images/hamburger.png" class="cursor-pointer z-50 relative order-2 lg:hidden">
+            <!--### Hamburger Icon ###-->
+
+            <!-- Menü Item -->
+            <div class="header-navigation">
+              <a href="#">Kurumsal</a>
+              <a href="#">Projelerimiz</a>
+              <a href="#">Basın</a>
+              <a href="#">Önce İnsan</a>
+              <a href="#">Bize Ulaşın</a>
+            </div>
+            <!--### Menü Item ###-->
+
+            <!-- ENG Buton ve Sizi Arayalım Buttonu -->
+            <div class="flex items-center flex-shrink-0 gap-4 lg:gap-6 xl:gap-10 2xl:14">
+              <a href="#"
+                class="bg-[#2A2A2A] flex justify-center items-center h-[40px] px-4 rounded-full text-white gap-2">
+                <img src="./src/images/svg/mesaj.svg" alt="">
+                <span>Sizi Arayalım</span>
+              </a>
+              <a href="#" class="border rounded-full text-white w-10 h-10 flex items-center justify-center">EN</a>
+            </div>
+            <!--### ENG Buton ve Sizi Arayalım Buttonu ###-->
+
+          </nav>
+          <!--### Sol Taraf / Navbar ###-->
+
+        </div>
       </div>
     </div>
     <!--### Top Bar ### -->
 
+    <!-- Sayfa Üstü Yazı -->
     <div class="container mx-auto p-4 relative">
-      <div class="mt-12 flex flex-col">
-        <h1 class="text-white text-[32px] font-bold tracking-[1px]">Folkart Vega</h1>
-        <h2 class="text-white text-lg tracking-[1px]">Kaçırılmayacak Fırsatlarla <br />
-          Sizleri Bekliyor!</h2>
-        <div class="mt-4">
+      <div class="mt-12 flex flex-col md:mt-36">
+
+        <h1 class="text-white text-[32px] tracking-[1px]">Folkart Vega</h1>
+        <h2 class="text-white text-lg tracking-[1px] w-[250px] md:w-[450px]">
+          Kaçırılmayacak Fırsatlarla Sizleri Bekliyor!
+        </h2>
+
+        <!--Sayfa Üstündeki Butonlar-->
+        <div class="mt-4 md:mt-12 flex flex-col md:flex-row md:gap-2">
           <a href="#"
-            class="flex items-center w-[200px] justify-center gap-2 text-white rounded-full border-[2px] p-3 mb-2">
+            class="flex items-center w-[200px] justify-center gap-2 text-white rounded-full border-[2px] p-3 mb-2 md:mb-0">
             <img src="./src/images/svg/telefon.svg" alt="">
-            <span>SİZİ ARAYALIM</span>
+            <span class="font-bold">SİZİ ARAYALIM</span>
           </a>
           <a href="#" class="flex items-center w-[250px] justify-center gap-2 text-white rounded-full border-[2px] p-3">
             <img src="./src/images/svg/mesaj.svg" alt="">
-            <span>ONLINE RANDEVU</span>
+            <span class="font-bold">ONLINE RANDEVU</span>
           </a>
         </div>
+        <!--### Sayfa Üstündeki Butonlar ###-->
+
+
       </div>
     </div>
+    <!--### Sayfa Üstü Yazı ###-->
 
+    <!--Page Scroll -->
     <div class="absolute bottom-3 w-full flex flex-col justify-center items-center">
       <img src="./src/images/svg/mouse.svg" alt="sayfayı kaydırın" class="mb-2">
       <span class="text-white">Sayfayı Kaydırın</span>
     </div>
+    <!--### Page Scroll ###-->
 
     </head>
     <!--### HEADER COMPONENT ###-->
