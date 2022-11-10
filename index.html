@@ -10,6 +10,9 @@
   <!--Style-->
   <link rel="stylesheet" href="src/style.scss">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -98,16 +101,235 @@
     <!--### Sayfa Üstü Yazı ###-->
 
     <!--Page Scroll -->
-    <div class="absolute bottom-3 w-full flex flex-col justify-center items-center">
+    <div class="md:hidden absolute bottom-3 w-full flex flex-col justify-center items-center">
       <img src="./src/images/svg/mouse.svg" alt="sayfayı kaydırın" class="mb-2">
       <span class="text-white">Sayfayı Kaydırın</span>
     </div>
     <!--### Page Scroll ###-->
 
-    </head>
-    <!--### HEADER COMPONENT ###-->
+  </header>
+  <!--### HEADER COMPONENT ###-->
 
 
+  <!-- Sayfa navigation -->
+  <div class="bg-[#F3ECE6] border-b-[#979797]">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center md:justify-between items-center h-[100px]">
+        <a href="#" class="hidden md:flex md:gap-2 md:items-center">
+          <img src="./src/images/svg/location.svg" alt="">
+          <span class="font-bold">Konak, İzmir</span>
+        </a>
+        <a href="#" class="hidden md:flex md:flex-col md:gap-2 md:items-center">
+          <img src="./src/images/svg/Mouse-gri.svg" alt="">
+          <span>Sayfayı Kaydırın</span>
+        </a>
+        <a href="#" class="flex gap-2 items-center">
+          <img src="./src/images/svg/camera.svg" alt="">
+          <span class="font-bold">Görüntülü Görüşün</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--### Sayfa navigation ###-->
+
+  <!--Konsept-->
+  <div class="md:mt-[110px] mt-[20px]">
+    <div class="container mx-auto px-4">
+      <h1 class="text-[#3E3E3E] mb-[20px] text-center md:text-[52px] text-[24px] tracking-[0.72px] md:mb-[90px] block">
+        Konsept
+      </h1>
+
+      <!-- Slider main container -->
+      <div class="swiper swiper-one mb-11 w-full h-auto z-0">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+
+            <div class="flex flex-col flex-1 md:flex-row md:gap-6">
+
+              <div class="h-auto w-full md:w-1/2">
+                <img src="./src/images/05.jpg" class="w-full object-cover">
+              </div>
+
+              <div class="text-[#3E3E3E] mt-7 md:mt-0 md:w-1/2 md:flex md:flex-col md:justify-center md:ml-8">
+
+                <div class="w-[400px]">
+                  <h2 class="tracking-[0.76px] text-[20px] font-bold leading-8">SONSUZLUĞA AÇILAN KAPI</h2>
+                  <p class="tracking-[0.22px] text-[16px] leading-7">
+                    Kişiye özel Infinity Pool ile bazı dairelerimizde şehir
+                    merkezinde denize giriyormuş hissini yaşarken,
+                    sonsuz bir ufka kulaç atacaksınız.
+                  </p>
+
+                  <div class="hidden md:flex md:items-center md:gap-2 md:-ml-1 md:relative">
+                    <div class="swiper-button-prev swiper-button-prev-one"></div>
+                    <div class="h-[16px] w-[1px] -ml-2 bg-[#666]"></div>
+                    <div class="swiper-button-next swiper-button-next-one"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class=" swiper-slide">
+
+            <div class="flex flex-col flex-1 md:flex-row md:gap-6">
+
+              <div class="h-auto w-full md:w-1/2">
+                <img src="./src/images/05.jpg" class="w-full object-cover">
+              </div>
+
+              <div class="text-[#3E3E3E] mt-7 md:mt-0 md:w-1/2 md:flex md:flex-col md:justify-center md:ml-8">
+
+                <div class="w-[400px]">
+                  <h2 class="tracking-[0.76px] text-[20px] font-bold leading-8">SONSUZLUĞA AÇILAN KAPI</h2>
+                  <p class="tracking-[0.22px] text-[16px] leading-7">
+                    Kişiye özel Infinity Pool ile bazı dairelerimizde şehir
+                    merkezinde denize giriyormuş hissini yaşarken,
+                    sonsuz bir ufka kulaç atacaksınız.
+                  </p>
+
+                  <div class="hidden md:flex md:items-center md:gap-2 md:-ml-1 md:relative">
+                    <div class="swiper-button-prev swiper-button-prev-one"></div>
+                    <div class="h-[16px] w-[1px] -ml-2 bg-[#666]"></div>
+                    <div class="swiper-button-next swiper-button-next-one"></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+
+            <div class="flex flex-col flex-1 md:flex-row md:gap-6">
+
+              <div class="h-auto w-full md:w-1/2">
+                <img src="./src/images/05.jpg" class="w-full object-cover">
+              </div>
+
+              <div class="text-[#3E3E3E] mt-7 md:mt-0 md:w-1/2 md:flex md:flex-col md:justify-center md:ml-8">
+
+                <div class="w-[400px]">
+                  <h2 class="tracking-[0.76px] text-[20px] font-bold leading-8">SONSUZLUĞA AÇILAN KAPI</h2>
+                  <p class="tracking-[0.22px] text-[16px] leading-7">
+                    Kişiye özel Infinity Pool ile bazı dairelerimizde şehir
+                    merkezinde denize giriyormuş hissini yaşarken,
+                    sonsuz bir ufka kulaç atacaksınız.
+                  </p>
+
+                  <div class="hidden md:flex md:items-center md:gap-2 md:-ml-1 md:relative">
+                    <div class="swiper-button-prev swiper-button-prev-one"></div>
+                    <div class="h-[16px] w-[1px] -ml-2 bg-[#666]"></div>
+                    <div class="swiper-button-next swiper-button-next-one"></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-2 -ml-1 relative md:hidden">
+          <div class="swiper-button-prev swiper-button-prev-one"></div>
+          <div class="h-[16px] w-[1px] -ml-2 bg-[#666]"></div>
+          <div class="swiper-button-next swiper-button-next-one"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!--### Konsept ###-->
+
+
+  <div class="bg-black bg-cover bg-center" style="background-image:url('./src/images/bg-pattern.png')">
+    <div class="container mx-auto p-4">
+      <h1 class="text-white mb-[20px] text-center md:text-[52px] text-[24px] tracking-[0.72px] md:mb-[90px] block">
+        Proje Özellikleri
+      </h1>
+
+
+      <!-- Slider main container -->
+      <div class="swiper swiper-two mb-11 w-full h-auto z-0">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <div class="flex flex-col flex-1 md:flex-row md:gap-6">
+
+              <div class="hidden md:block h-auto w-full md:w-1/3 order-2">
+                <img src="./src/images/19.jpg" class="w-full object-cover">
+              </div>
+
+              <div class="text-white mt-7 md:mt-0 md:w-1/2 md:flex md:flex-col md:items-end md:justify-center">
+
+                <div class="w-[400px]">
+                  <h2 class="tracking-[0.76px] text-[20px] font-bold leading-8">YILDIZLAR KADAR PARLAK,
+                    İZMİR KADAR EŞSİZ</h2>
+                  <p class="tracking-[0.22px] text-[16px] leading-7">
+                    Folkart Vega, yenilikçi tasarımı ve incelikli mimari detaylarıyla şehrin yeni ve en parlak yıldızı
+                    olacak. Folkart Vega, göz alabildiğine uzanan çok özel panoramik bir körfez manzarasına ve palmiye
+                    ağaçlarıyla süslü etkileyici bir peyzaj alanına sahip. Proje, 1+1, 2+1, 3+1, 3+1 dubleks, 4+1, 4+1
+                    dubleks, 5+1 dubleks olmak üzere; toplam 843 konut ve 53 ticari alandan oluşuyor.
+                  </p>
+
+
+                  <div class="flex items-center gap-2 -ml-1 relative">
+                    <div class="swiper-button-prev swiper-button-prev-two"></div>
+                    <div class="h-[16px] w-[1px] -ml-2 bg-[#666]"></div>
+                    <div class="swiper-button-next swiper-button-next-two"></div>
+                  </div>
+
+                  <div class="mt-4">
+                    <button class="border-2 rounded-full px-4 py-2 cursor-pointer">Proje Kataloğu</button>
+                    <button class="border-2 rounded-full px-4 py-2 cursor-pointer">İletişim Formu</button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            sd
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <script>
+    const swiperOne = new Swiper('.swiper-one', {
+      navigation: {
+        nextEl: '.swiper-button-next-one',
+        prevEl: '.swiper-button-prev-one',
+      },
+    });
+
+    const swiperTwo = new Swiper('.swiper-two', {
+      navigation: {
+        nextEl: '.swiper-button-next-two',
+        prevEl: '.swiper-button-prev-two',
+      },
+    });
+  </script>
 </body>
 
 </html>

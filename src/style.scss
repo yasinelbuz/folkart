@@ -27,4 +27,34 @@
 			rgba(255, 255, 255, 0) 100%
 		);
 	}
+
+	.swiper-button-prev {
+		position: relative !important;
+		left: 0 !important;
+		margin: 0 !important;
+
+		&:after {
+			font-size: 16px !important;
+			color: #666666;
+		}
+	}
+
+	.swiper-button-next {
+		position: relative !important;
+		margin: 0 !important;
+		&:after {
+			font-size: 16px !important;
+			color: #666666;
+		}
+	}
+
+	.slide-btn {
+		.swiper-button-next,
+		.swiper-button-prev {
+			&:after {
+				font-size: 16px !important;
+				color: #fff;
+			}
+		}
+	}
 }
